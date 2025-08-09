@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Vijaya - Building Tomorrow's Technology Today</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-gradient">Tejas</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">What I Create</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Building Tomorrow's</span><br>
+                    <span class="gradient-text">Technology Today</span>
+                </h1>
+                <p class="hero-subtitle">Computer Science Engineer specializing in AI/ML, Full-Stack Development, and innovative tech solutions. Transforming ideas into impactful digital experiences.</p>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">
+                        <span>View My Work</span>
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">
+                        <span>Get In Touch</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I Create</h2>
+                <p class="section-subtitle">From concept to code⸺bringing ideas to life</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6"/>
+                            <path d="m21 12-6-6-6 6-6-6"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>AI-Powered Solutions</h3>
+                        <p>Building intelligent systems that learn, adapt, and solve real-world problems</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Deep Learning</span>
+                            <span class="tech-badge">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Full-Stack Applications</h3>
+                        <p>Creating seamless digital experiences from backend to frontend</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="m19 9-5 5-4-4-3 3"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Data-Driven Insights</h3>
+                        <p>Extracting meaningful patterns from complex datasets</p>
+                        <div class="feature-tech">
+                            <span class="tech-badge">Data Science</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Innovative solutions built with cutting-edge technology</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-category">Web Development</div>
+                        <h3 class="project-name">Agam</h3>
+                        <p class="project-tagline">Interactive orrery visualizing near-Earth objects</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Real-time astronomical data visualization using Three.js and jQuery. Brings the cosmos to life with detailed celestial body information.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Real-time APIs</span>
+                        </div>
+                        <div class="project-impact">
+                            <span class="impact-text">Pushing boundaries of web-based space visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-category">AI/ML</div>
+                        <h3 class="project-name">Emotify</h3>
+                        <p class="project-tagline">AI emotion recognition from audio patterns</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Deep learning system analyzing speech patterns to classify emotions. Uses MFCC processing and TensorFlow for accurate emotion detection.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Audio Processing</span>
+                        </div>
+                        <div class="project-impact">
+                            <span class="impact-text">Advancing human-computer emotional understanding</span>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- AI-Powered Personalized Interview Coach Project Card -->
+    <div class="project-card" data-category="ai">
+        <div class="project-header">
+            <div class="project-category">AI/ML</div>
+            <h3 class="project-name">AI-Powered Personalized Interview Coach</h3>
+            <p class="project-tagline">Hyper-Personalized Interview Prep with Generative AI</p>
+        </div>
+        <div class="project-content">
+            <p class="project-description">Developed a full-stack AI coach using a RAG pipeline and the Gemini API to generate personalized questions from resumes and job descriptions, providing AI-driven feedback on user performance.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Generative AI</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">Gemini API</span>
+                <span class="tech-tag">Vector Embeddings</span>
+                <span class="tech-tag">Asynchronous Architecture</span>
+            </div>
+            <div class="project-impact">
+                <span class="impact-text">Delivers a non-blocking UI with comprehensive, real-time performance analysis.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- End-to-End Azure Financial Data Pipeline Project Card -->
+    <div class="project-card" data-category="data">
+        <div class="project-header">
+            <div class="project-category">Data Engineering</div>
+            <h3 class="project-name">End-to-End Azure Financial Data Pipeline</h3>
+            <p class="project-tagline">High-Volume Financial Data Processing at Scale</p>
+        </div>
+        <div class="project-content">
+            <p class="project-description">Architected a medallion (Bronze-Silver-Gold) data architecture to efficiently process over 550M daily trading records. Built automated ETL pipelines achieving 99.95% uptime.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Azure Data Factory</span>
+                <span class="tech-tag">Databricks</span>
+                <span class="tech-tag">ETL</span>
+                <span class="tech-tag">Data Architecture</span>
+                <span class="tech-tag">SQL</span>
+            </div>
+            <div class="project-impact">
+                <span class="impact-text">Optimized workflows for 15TB+ datasets, improving performance by 70%.</span>
+            </div>
+        </div>
+    </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-category">AI/ML</div>
+                        <h3 class="project-name">Purr-fessor</h3>
+                        <p class="project-tagline">AI teaching assistant with personality</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Engaging educational chatbot with feline charm. Provides personalized learning assistance through advanced NLP and conversational AI.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vercel</span>
+                            <span class="tech-tag">APIs</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Conversational AI</span>
+                        </div>
+                        <div class="project-impact">
+                            <span class="impact-text">Making learning more interactive and enjoyable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="iot">
+                    <div class="project-header">
+                        <div class="project-category">IoT/Embedded</div>
+                        <h3 class="project-name">Signalize</h3>
+                        <p class="project-tagline">Embedded traffic light control system</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Real-world traffic simulation using Embedded C and microcontrollers. Demonstrates hardware-software integration for smart city applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Embedded C</span>
+                            <span class="tech-tag">Microcontrollers</span>
+                            <span class="tech-tag">Hardware Control</span>
+                        </div>
+                        <div class="project-impact">
+                            <span class="impact-text">Bridging software and physical world interactions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">Feedback from collaborators and industry professionals</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Tejas's approach to AI development is exceptional. His projects demonstrate deep understanding of both theory and practical implementation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DD</div>
+                        <div class="author-info">
+                            <div class="author-name">Data Dev</div>
+                            <div class="author-handle">@DataDeLaurier</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Tejas on the Emotify project was amazing. His ability to translate complex ML concepts into working solutions is impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TR</div>
+                        <div class="author-info">
+                            <div class="author-name">Tech Reviewer</div>
+                            <div class="author-handle">@TechReviewer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Tejas brings creativity and technical expertise to every project. His full-stack skills and AI knowledge make him an invaluable team member."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PM</div>
+                        <div class="author-info">
+                            <div class="author-name">Project Manager</div>
+                            <div class="author-handle">@ProjectManager</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Let's build something amazing together</h2>
+                    <p class="contact-subtitle">Ready to transform your ideas into reality? Get in touch and let's create something extraordinary.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:tejasvijaya@example.com" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            tejasvijaya@example.com
+                        </a>
+                        <a href="https://linkedin.com/in/tejasvijaya" target="_blank" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            LinkedIn Profile
+                        </a>
+                        <a href="https://github.com/TejasVijaya74" target="_blank" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <button class="btn-primary" onclick="window.location.href='mailto:tejasvijaya@example.com'">
+                        <span>Start a conversation</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-gradient">Tejas Vijaya</span>
+                    <p>Building Tomorrow's Technology Today</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#features">What I Create</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tejas Vijaya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
